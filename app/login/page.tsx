@@ -3,9 +3,10 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
+
 export default function Login() {
     return (
-        <div className="min-h-screen flex flex-row bg-[linear-gradient(to_right,white_50%,#0b2e66_50%)]">
+        <div className="border-2 min-h-screen flex flex-row bg-[linear-gradient(to_right,white_50%,#0b2e66_50%)]">
             <div className="w-1/2 flex items-center justify-center">
                 <Image
                     src="/img/imagem_catolica.png"
@@ -16,11 +17,12 @@ export default function Login() {
             </div>
             <div className="w-1/2 flex items-center justify-end pr-20">
 
-                <form className="flex flex-col text-amber-400 gap-4 w-[300px]">
-                    <h1 className="text-white flex items-center justify-center ">Login</h1>
+                <form className="flex flex-col  text-amber-400 gap-4 w-[300px]">
+                    <h1 className="text-white text-2xl flex items-center justify-center">Login</h1>
                     <p className="text-white">Se você já possui uma conta, pode fazer login com seu username e senha.</p>
                     <Label htmlFor="username">Username</Label>
                     <Input
+                        className="rounded-full"
                         type="text"
                         name="username"
                         id="username"
@@ -29,6 +31,7 @@ export default function Login() {
                     />
                     <Label htmlFor="password">Senha</Label>
                     <Input
+                        className="rounded-full"
                         type="password"
                         name="password"
                         id="password"
@@ -36,7 +39,7 @@ export default function Login() {
                         required
                     />
                     <div>
-                        <Button type="submit" className="text-black bg-white">
+                        <Button type="submit" className="text-black bg-white px-27 rounded-full">
                             Acessar Conta
                         </Button>
                     </div>
