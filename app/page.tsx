@@ -1,9 +1,10 @@
-  export default function Home() {
+import Link from "next/link";
+export default function Home() {
     return (
-      <div className="bg-blue-800 justify-items-center">
-        <h1 className="font-bold text-white ">
-          Home em construcao...
-        </h1>
+      <div className="">
+        <div className="flex items-center justify-center">
+          <Link className="text-blue-800" href={"/login"}>Login</Link>
+        </div>
       </div>
       
     );
