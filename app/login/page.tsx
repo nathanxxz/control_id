@@ -8,8 +8,6 @@ import axios from "axios";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-
-
 export default function Login() {
 
     const router = useRouter();
@@ -46,7 +44,7 @@ export default function Login() {
             <div className="w-1/2 flex items-center justify-center">
 
                 <form onSubmit={handleLogin} className="flex flex-col  text-amber-400 gap-4 w-[300px]">
-                    <h1 className="text-white text-2xl flex items-center justify-center">Login</h1>
+                    <h1 className="text-white font-bold text-2xl flex items-center justify-center">Login</h1>
                     <p className="text-white">Se você já possui uma conta, pode fazer login com seu username e senha.</p>
                     <Label htmlFor="username">Username</Label>
                     <Input
@@ -71,21 +69,21 @@ export default function Login() {
                         required
                     />
                     <div>
-                        <div className="flex justify-center pt-5">  {/* pt-5 = 20px padding top */}
+                        <div className="flex justify-center pt-4">
                             <Button
                                 type="submit"
-                                className="text-black bg-white hover:bg-blue-300 active:bg-blue-400 px-20 rounded-full cursor-pointer transition-all duration-300 ease-in-out"
+                                className="text-black bg-white hover:bg-blue-300 active:bg-blue-400 px-27 rounded-full cursor-pointer transition-all duration-300 ease-in-out"
                             >
                                 Acessar Conta
                             </Button>
                         </div>
 
-                        {/* <p className="text-white text-center pt-5">
+                        <p className="text-white text-center pt-5">
                             Não possui uma conta?{' '}
-                            <a href="/register" className="text-blue-300 hover:underline">
+                            <a href="/cadastro" className="text-amber-400 hover:underline">
                                 Registre-se
                             </a>
-                        </p> */}
+                        </p>
                         
                     </div>
                 </form>

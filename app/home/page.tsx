@@ -7,8 +7,8 @@ export default function HomePage() {
     const router = useRouter();
 
     const handleLogout = () => {
-        // Aqui você pode limpar o token/localStorage se necessário
-        router.push("/login"); // Redireciona para login
+        
+        router.push("/login"); 
     };
 
     return (
