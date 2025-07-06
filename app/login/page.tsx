@@ -32,7 +32,7 @@ export default function Login() {
     };
 
     return (
-        <div className="border-2 min-h-screen flex flex-row bg-[linear-gradient(to_right,white_50%,#0b2e66_50%)]">
+        <div className="border-2 min-h-screen flex flex-row bg-[linear-gradient(to_right,white_50%,#172554_50%)]">
             <div className="w-1/2 flex items-center justify-center">
                 <Image
                     src="/img/imagem_catolica.png"
