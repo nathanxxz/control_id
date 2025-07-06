@@ -32,7 +32,7 @@ export default function Login() {
     };
 
     return (
-        <div className="border-2 min-h-screen flex flex-row bg-[linear-gradient(to_right,white_50%,#172554_50%)]">
+        <div className=" min-h-screen flex flex-row bg-[linear-gradient(to_right,white_50%,#172554_50%)]">
             <div className="w-1/2 flex items-center justify-center">
                 <Image
                     src="/img/imagem_catolica.png"
@@ -48,7 +48,7 @@ export default function Login() {
                     <p className="text-white">Se você já possui uma conta, pode fazer login com seu username e senha.</p>
                     <Label htmlFor="username">Username</Label>
                     <Input
-                        className="rounded-full"
+                        className="rounded-full text-white"
                         type="text"
                         name="username"
                         id="username"
@@ -59,7 +59,7 @@ export default function Login() {
                     />
                     <Label htmlFor="password">Senha</Label>
                     <Input
-                        className="rounded-full"
+                        className="rounded-full text-white"
                         type="password"
                         name="password"
                         id="password"
@@ -72,7 +72,7 @@ export default function Login() {
                         <div className="flex justify-center pt-4">
                             <Button
                                 type="submit"
-                                className="text-black bg-white hover:bg-blue-300 active:bg-blue-400 px-27 rounded-full cursor-pointer transition-all duration-300 ease-in-out"
+                                className="text-black bg-white hover:bg-amber-400 active:bg-blue-950 px-27 rounded-full cursor-pointer transition-all duration-300 ease-in-out"
                             >
                                 Acessar Conta
                             </Button>
