@@ -41,7 +41,7 @@ export default function Cadastro() {
                             </SelectTrigger>
                             <SelectContent>
                                 <SelectItem value="suporte">Suporte</SelectItem>
-                                <SelectItem value="cordenador">Cordenador</SelectItem>
+                                <SelectItem value="coordenador">Coordenador</SelectItem>
                                 <SelectItem value="administrador">Administrador</SelectItem>
                             </SelectContent>
                         </Select>

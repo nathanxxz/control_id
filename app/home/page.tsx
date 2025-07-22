@@ -1,22 +1,14 @@
 "use client";
 
-import {
-    Sidebar,
-    SidebarContent,
-    SidebarMenuItem,
-    SidebarMenuButton,
-    SidebarMenu,
-    SidebarGroup,
-    SidebarGroupContent,
-    SidebarGroupLabel,
-    SidebarProvider
+import {Sidebar,SidebarContent,SidebarMenuItem,SidebarMenuButton,SidebarMenu,SidebarGroup,SidebarGroupContent, SidebarGroupLabel,SidebarProvider
 } from "@/components/ui/sidebar";
 import { useRouter } from "next/navigation";
 import { Calendar, Home, Inbox, Search, Settings } from "lucide-react";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 const items = [
-    { title: "Home", url: "#", icon: Home },
+    { title: "Home", url: "/home", icon: Home },
     { title: "Teste", url: "#", icon: Inbox },
     { title: "Teste", url: "#", icon: Calendar },
     { title: "Teste", url: "#", icon: Search },
@@ -31,8 +23,8 @@ export default function HomePage() {
     };
 
     return (
-        <div className="bg-white">
-            <div className="flex m-37 justify-center items-center mr-8">
+        <div className="bg-white h-screen overflow-hidden">
+            <div className="flex my-64 justify-center items-center ml-52">
                 <Image src={"/img/imagem_catolica.png"}  alt="Imagem da faculdade"
                     width={400}
                     height={400}></Image>
@@ -41,9 +33,9 @@ export default function HomePage() {
                 <Sidebar >
                     <SidebarContent className="bg-blue-950">
                         <SidebarGroup>
-                            <SidebarGroupLabel className="text-white">Opções</SidebarGroupLabel>
+                            <SidebarGroupLabel className="text-white text-2xl flex justify-center font-bold">Opções</SidebarGroupLabel>
                             <SidebarGroupContent>
-                                <SidebarMenu className="text-white">
+                                <SidebarMenu className="text-white mt-10">
                                     {items.map((item) => (
                                         <SidebarMenuItem key={item.title}>
                                             <SidebarMenuButton asChild>
@@ -57,6 +49,7 @@ export default function HomePage() {
                                 </SidebarMenu>
                             </SidebarGroupContent>
                         </SidebarGroup>
+                        <Button onClick={handleLogout} className="bg-white font-bold text-black w-48 m-6 mt-80 hover:bg-amber-400  active:bg-blue-950 rounded-full cursor-pointer transition-all duration-300 ease-in-out" type="submit">Sair</Button>
                     </SidebarContent>
                 </Sidebar>
 
